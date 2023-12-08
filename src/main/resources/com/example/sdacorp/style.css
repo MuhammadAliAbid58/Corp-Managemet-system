@@ -1,0 +1,43 @@
+.primary-color{
+    -fx-background-color: #008080;
+}
+
+.secondary-color{
+    -fx-background-color: #FFFFFF;
+}
+
+.text-input{
+    -fx-background-color: #008080;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: #242551;
+}
+.button {
+    -fx-background-color: #008080;
+    -fx-text-fill: white;
+    -fx-background-radius: 30;
+    -fx-min-width: 100px;
+    -fx-min-height: 50px;
+
+}
+
+.button:hover {
+    -fx-background-color: #f80000;
+}
+.hrpage{
+    -fx-background-color: #008080;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: #242551;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+
+}
+
+.ID{
+    -fx-background-color: #008080;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: #242551;
+}
+

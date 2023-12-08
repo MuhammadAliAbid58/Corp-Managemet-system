@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="838.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdacorp.EmployeeSubmitReport">
+    <children>
+        <Pane prefHeight="568.0" prefWidth="270.0" style="-fx-background-color: #008080;">
+            <children>
+                <Button layoutX="6.0" layoutY="458.0" mnemonicParsing="false" onAction="#OnclickSubmitReportBtn" prefHeight="50.0" prefWidth="222.0" text="Submit Report">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="9.0" layoutY="344.0" mnemonicParsing="false" onAction="#ONClickReportAComplainBtn" prefHeight="56.0" prefWidth="252.0" text="Report a Complain">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="8.0" layoutY="283.0" minHeight="47.0" mnemonicParsing="false" onAction="#OnClickUpdateInfoBtn" prefHeight="50.0" prefWidth="260.0" text="Update Information">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="6.0" layoutY="403.0" mnemonicParsing="false" onAction="#OnClickCreateAFormBtn" prefHeight="50.0" prefWidth="222.0" text="Create a Form">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Group layoutX="7.0" layoutY="471.0" />
+                <Group layoutX="14.0" layoutY="522.0" />
+                <ImageView fitHeight="151.0" fitWidth="154.0" layoutX="41.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/Employee1.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="forclosing" layoutX="29.0" layoutY="177.0" text="Employee">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="40.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="47.0" fitWidth="39.0" layoutX="14.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/complain.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="6.0" layoutY="510.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="201.0" text="Notification">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="14.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/notification-alarm-buzzer-icon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="13.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/pencil-square-outline-icon.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="4.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnClickHomeBtn" prefHeight="56.0" prefWidth="163.0" text="Home">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="47.0" fitWidth="39.0" layoutX="14.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/home.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="62.0" fitWidth="31.0" layoutX="18.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/faster-arrow-top-bottom-icon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="14.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/submit.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label layoutX="414.0" layoutY="22.0" prefHeight="44.0" prefWidth="333.0" text="Report Submission" textAlignment="CENTER">
+            <font>
+                <Font name="Helvetica Neue Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="282.0" layoutY="89.0" text="Project Title:">
+            <font>
+                <Font name="Helvetica Neue Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="282.0" layoutY="205.0" text="Report Description:">
+            <font>
+                <Font name="Helvetica Neue Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="p_tile" layoutX="483.0" layoutY="86.0" prefHeight="28.0" prefWidth="333.0" promptText="Enter Project Tiltle Here">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="report_desc" alignment="TOP_LEFT" layoutX="293.0" layoutY="236.0" prefHeight="181.0" prefWidth="532.0" promptText="Enter The Final Report Here.....">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+      <Label layoutX="282.0" layoutY="141.0" text="Report Title:">
+         <font>
+            <Font name="Helvetica Neue Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Report_title" layoutX="483.0" layoutY="138.0" prefHeight="28.0" prefWidth="333.0" promptText="Enter the Report Title Here">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="label" layoutX="372.0" layoutY="436.0" prefHeight="44.0" prefWidth="384.0" textFill="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="476.0" layoutY="485.0" mnemonicParsing="false" onAction="#OnclickSubmitBtn" prefHeight="50.0" prefWidth="171.0" text="Submit">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>

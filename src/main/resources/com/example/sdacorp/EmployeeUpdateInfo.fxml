@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="838.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdacorp.EmployeeUpdateInfoController">
+    <children>
+        <Pane prefHeight="568.0" prefWidth="270.0" style="-fx-background-color: #008080;">
+            <children>
+                <Button layoutX="6.0" layoutY="458.0" mnemonicParsing="false" onAction="#OnclickSubmitReportBtn" prefHeight="50.0" prefWidth="222.0" text="Submit Report">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="9.0" layoutY="344.0" mnemonicParsing="false" onAction="#ONClickReportAComplainBtn" prefHeight="56.0" prefWidth="252.0" text="Report a Complain">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="8.0" layoutY="283.0" minHeight="47.0" mnemonicParsing="false" onAction="#OnClickUpdateInfoBtn" prefHeight="50.0" prefWidth="260.0" text="Update Information">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="6.0" layoutY="403.0" mnemonicParsing="false" onAction="#OnClickCreateAFormBtn" prefHeight="50.0" prefWidth="222.0" text="Create a Form">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <Group layoutX="7.0" layoutY="471.0" />
+                <Group layoutX="14.0" layoutY="522.0" />
+                <ImageView fitHeight="151.0" fitWidth="154.0" layoutX="41.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/Employee1.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="forclosing" layoutX="29.0" layoutY="177.0" text="Employee">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="40.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="47.0" fitWidth="39.0" layoutX="14.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/complain.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="6.0" layoutY="510.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="201.0" text="Notification">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="14.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/notification-alarm-buzzer-icon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="13.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/pencil-square-outline-icon.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="4.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnClickHomeBtn" prefHeight="56.0" prefWidth="163.0" text="Home">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="47.0" fitWidth="39.0" layoutX="14.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/home.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="62.0" fitWidth="31.0" layoutX="18.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/faster-arrow-top-bottom-icon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="14.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos-imgs/submit.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Group layoutX="285.760009765625" layoutY="21.0">
+            <children>
+                <Label layoutX="119.239990234375" prefHeight="44.0" prefWidth="352.0" text="Update Information" textAlignment="CENTER">
+                    <font>
+                        <Font name="Helvetica Neue Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="address" alignment="TOP_LEFT" layoutX="164.239990234375" layoutY="86.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="315.0" promptText="Update Address">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="0.239990234375" layoutY="87.0" text="Address:">
+                    <font>
+                        <Font name="Helvetica Neue Condensed Black" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="contact" layoutX="164.239990234375" layoutY="156.0" prefHeight="33.0" prefWidth="315.0" promptText="Update Contact">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="2.239990234375" layoutY="156.0" text="Contact:">
+                    <font>
+                        <Font name="Helvetica Neue Condensed Black" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="email" layoutX="164.239990234375" layoutY="217.0" prefHeight="33.0" prefWidth="315.0" promptText="Update Email">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="3.239990234375" layoutY="218.0" text="Email:">
+                    <font>
+                        <Font name="Helvetica Neue Condensed Black" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="2.239990234375" layoutY="279.0" text="Username:">
+                    <font>
+                        <Font name="Helvetica Neue Condensed Black" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="164.239990234375" layoutY="278.0" prefHeight="33.0" prefWidth="315.0" promptText="Update Username">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="2.239990234375" layoutY="341.0" text="Password:">
+                    <font>
+                        <Font name="Helvetica Neue Condensed Black" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="password" layoutX="164.239990234375" layoutY="340.0" prefHeight="31.0" prefWidth="315.0" promptText="Update Password">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="212.239990234375" layoutY="442.0" minHeight="44.0" mnemonicParsing="false" onAction="#onclickupdatebtn" prefHeight="44.0" prefWidth="115.0" text="Update">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Label fx:id="updlabel" layoutX="186.239990234375" layoutY="397.0" prefHeight="28.0" prefWidth="297.0" textFill="#ab0000">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Group>
+    </children>
+</Pane>
